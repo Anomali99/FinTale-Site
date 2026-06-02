@@ -1,26 +1,114 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-ft-primary: #ffd700;
+  --color-ft-primary-dark: #c5a000;
+
+  --color-ft-background: #1a1a1a;
+  --color-ft-surface: #252525;
+  --color-ft-surface-variant: #333333;
+
+  --color-ft-success: #4caf50;
+  --color-ft-warning: #ff9800;
+  --color-ft-error: #ef5350;
+
+  --color-ft-text-primary: #ffffff;
+  --color-ft-text-secondary: rgba(255, 255, 255, 0.7);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+body {
+  background-color: var(--color-ft-background);
+  color: var(--color-ft-text-primary);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes reveal-left {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes reveal-right {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.css-reveal-up {
+  animation: reveal-up 0.8s ease-out forwards;
+}
+.css-reveal-left {
+  animation: reveal-left 0.8s ease-out forwards;
+}
+.css-reveal-right {
+  animation: reveal-right 0.8s ease-out forwards;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-ft-surface-variant) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-ft-surface-variant);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-ft-text-secondary);
+}
+
+.animate-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+
+  transition:
+    opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.animate-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-100 {
+  transition-delay: 150ms;
+}
+.delay-200 {
+  transition-delay: 300ms;
+}
+.delay-300 {
+  transition-delay: 450ms;
 }
