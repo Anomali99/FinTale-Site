@@ -1,22 +1,32 @@
 # Pengenalan FinTale
 
-Selamat datang di dokumentasi resmi **FinTale**! Ini adalah pusat panduan komprehensif untuk memahami seluruh mekanisme aplikasi pencatat keuangan _offline-first_ dengan elemen RPG.
+Selamat datang di dokumentasi resmi **FinTale**. Panduan ini dirancang untuk membantu Anda memahami konsep dasar, arsitektur sistem, dan cara memaksimalkan seluruh modul yang ada di dalam aplikasi.
 
 ## Mengapa FinTale Berbeda?
 
-Aplikasi keuangan pada umumnya membosankan dan penuh dengan pelacakan data (tracker) yang mengancam privasi. FinTale dibangun dengan 3 pilar utama:
+FinTale menghadirkan pendekatan yang segar dalam dunia pencatatan keuangan pribadi. Alih-alih hanya menyajikan angka dan grafik, FinTale menggabungkan manajemen finansial yang serius dengan mekanik permainan yang menyenangkan melalui tiga fitur andalan:
 
-1. **Privasi Absolut (100% Offline)**: Data Anda tidak pernah dikirim ke _server_ mana pun. Semua disimpan secara lokal menggunakan SQLite.
-2. **Gamifikasi Sehat**: Mengubah rasa malas mencatat pengeluaran menjadi kepuasan menyelesaikan _Quest_.
-3. **Smart Allocation**: Sistem alokasi dana cerdas yang beradaptasi dengan _level_ finansial Anda.
+1. **Gamifikasi Finansial ala RPG**
+   Kami mengubah rutinitas mencatat keuangan menjadi sebuah petualangan yang interaktif. Dengan mengadaptasi elemen permainan RPG—seperti _Experience Points (XP)_, pencapaian _Level_, Sistem Gelar (_Title_), dan _Quest_ harian—FinTale memberikan apresiasi nyata atas setiap kedisiplinan Anda. Mengelola uang kini bukan lagi sekadar kewajiban, melainkan perjalanan yang memotivasi.
 
-> **Catatan Penting:** Karena FinTale murni berjalan _offline_, kami sangat menyarankan Anda menggunakan fitur sinkronisasi Google Drive untuk mencadangkan data secara berkala.
+2. **100% Offline-First (Cepat & Privat)**
+   FinTale dirancang agar dapat diakses kapan saja dan di mana saja, bahkan saat Anda sedang **tidak memiliki koneksi internet** sama sekali. Seluruh pencatatan dan kalkulasi diproses seketika di dalam perangkat Anda. Pendekatan ini tidak hanya membuat aplikasi berjalan sangat cepat tanpa _loading_, tetapi juga menjamin bahwa privasi data finansial Anda tetap aman dan tidak pernah dikirim ke _server_ pihak ketiga.
+
+3. **Smart Allocation (Alokasi Cerdas)**
+   Sebuah sistem manajemen _budget_ dinamis yang beradaptasi dengan tingkat kemahiran finansial Anda. FinTale tidak memaksakan aturan keuangan yang kaku sejak awal. Sebaliknya, sistem ini secara bertahap akan membuka dan memandu Anda menuju persentase alokasi dana yang lebih ideal (meliputi Biaya Hidup, Pembayaran Hutang, Dana Darurat, dan Investasi) seiring dengan naiknya _Level_ Anda.
+
+> **Catatan Keamanan & Pencadangan:**
+> Karena FinTale beroperasi secara _offline_, seluruh data Anda tersimpan murni di memori perangkat genggam Anda sendiri. Agar data Anda tidak hilang saat berganti perangkat (HP), kami sangat menyarankan Anda untuk rutin memanfaatkan fitur Ekspor Data (JSON) atau sinkronisasi _Cloud_ (Google Drive) yang tersedia di menu Pengaturan.
 
 ## Arsitektur Teknologi
 
-FinTale terdiri dari dua repositori utama yang bersifat _Open Source_:
+FinTale dibangun menggunakan teknologi modern untuk memastikan performa yang cepat dan antarmuka yang mulus di berbagai perangkat:
 
-- **Aplikasi Mobile**: Dibangun menggunakan kerangka kerja lintas _platform_, [Flutter](https://flutter.dev).
-- **Website Landing Page**: Dibangun menggunakan arsitektur web modern, [Next.js](https://nextjs.org).
+- **Framework:** [Flutter](https://flutter.dev/) (Dart)
+- **State Management:** Provider
+- **Local Database:** SQLite (via `sqflite`)
+- **Cloud Integration:** Google Sign-In v7 & Google Drive API (Khusus untuk fitur _Backup/Restore_)
 
-Silakan telusuri menu di sebelah kiri untuk menyelami cara kerja setiap fitur, mulai dari sistem _Experience Points (XP)_, denda pelanggaran anggaran harian, hingga manajemen investasi mandiri.
+---
+
+Silakan telusuri menu navigasi di sebelah kiri untuk menyelami cara kerja setiap modul pada aplikasi FinTale, mulai dari instalasi hingga panduan alokasi tingkat lanjut.

@@ -29,10 +29,10 @@ const FeatureSection: FC<FeatureSectionProps> = ({ feature, index }) => {
         </div>
 
         <div
-          className={`flex flex-1 flex-col text-center md:text-left ${isImageLeft ? "md:order-2" : "md:order-1"}`}
+          className={`flex flex-1 flex-col text-center ${isImageLeft ? "md:order-2 md:items-start md:text-left" : "md:order-1 md:items-end md:text-right"}`}
         >
-          <div className="animate-hidden bg-ft-surface border-ft-surface-variant mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-2xl border shadow-lg md:mx-0 md:h-20 md:w-20">
-            {feature.icon}
+          <div className="bg-ft-surface border-ft-surface-variant text-ft-primary animate-hidden mx-auto mb-4 flex w-max flex-row items-center justify-center gap-2 rounded-2xl border px-2 py-1 text-2xl font-semibold shadow-lg md:mx-0 md:mb-8 md:text-3xl">
+            {feature.icon} <span>Fitur {index + 1}</span>
           </div>
           <h3 className="animate-hidden mb-6 text-3xl leading-tight font-bold text-white delay-100 md:text-5xl">
             {feature.title}

@@ -58,7 +58,7 @@ export default function Home() {
           </div>
           <div className="animate-hidden relative z-10 flex items-center justify-center delay-200 md:flex">
             <div className="border-ft-surface-variant absolute h-100 w-100 animate-[spin_60s_linear_infinite] rounded-full border" />
-            <PhoneMockup imgUrl="https://images.unsplash.com/photo-1616423640778-28d1b53229bd?q=80&w=600&auto=format&fit=crop" />
+            <PhoneMockup imgUrl="/image/skill.jpg" />
           </div>
         </div>
       </section>

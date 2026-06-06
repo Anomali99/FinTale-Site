@@ -81,7 +81,7 @@ const DownloadButton: FC<DownloadButtonProps> = ({ upward = false }) => {
                 rel="noopener noreferrer"
                 className="hover:bg-ft-surface-variant text-ft-text-secondary block rounded-xl px-4 py-3 text-center text-sm transition hover:text-white"
               >
-                Lihat Semua Versi & Riwayat Rilis ↗
+                Lihat Semua Versi & Riwayat Rilis
               </a>
             </div>
           </div>

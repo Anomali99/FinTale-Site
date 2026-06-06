@@ -3,19 +3,19 @@ import { SiteConfig } from "./types";
 export const siteConfig: SiteConfig = {
   appInfo: {
     name: "FinTale",
-    version: "v1.0.0",
+    version: "v1.0.1",
     releaseDate: "Juni 2026",
-    allReleasesUrl: "https://github.com/Anomali99/fintale/releases",
+    allReleasesUrl: "https://github.com/Anomali99/FinTale/releases",
     downloads: {
       android: {
         arm64:
-          "https://github.com/Anomali99/fintale/releases/download/v1.0.0/fintale-arm64-v8a.apk",
+          "https://github.com/Anomali99/FinTale/releases/download/v1.0.1/FinTale-v1.0.1-arm64-v8a.apk",
         armeabi:
-          "https://github.com/Anomali99/fintale/releases/download/v1.0.0/fintale-armeabi-v7a.apk",
+          "https://github.com/Anomali99/FinTale/releases/download/v1.0.1/FinTale-v1.0.1-armeabi-v7a.apk",
         x86_64:
-          "https://github.com/Anomali99/fintale/releases/download/v1.0.0/fintale-x86_64.apk",
+          "https://github.com/Anomali99/FinTale/releases/download/v1.0.1/FinTale-v1.0.1-x86_64.apk",
         universal:
-          "https://github.com/Anomali99/fintale/releases/download/v1.0.0/fintale-universal.apk",
+          "https://github.com/Anomali99/FinTale/releases/download/v1.0.1/FinTale-v1.0.1-universal.apk",
       },
     },
   },
@@ -57,14 +57,13 @@ export const siteConfig: SiteConfig = {
           <path d="M18 11h.01" />
         </svg>
       ),
-      title: "Gamifikasi Finansial (RPG Mode)",
+      title: "Gamifikasi",
       description:
         "Ubah aktivitas mencatat keuangan menjadi petualangan. Dapatkan Experience Points (XP), naik level, dan raih gelar (Title) dari Novice Saver hingga Financial Master dengan menyelesaikan misi keuangan rutin.",
-      image:
-        "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&w=800&auto=format&fit=crop",
+      image: "/image/rpg.jpg",
     },
     {
-      id: "allocation",
+      id: "skill",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -81,11 +80,10 @@ export const siteConfig: SiteConfig = {
           <line x1="12" y1="22.08" x2="12" y2="12" />
         </svg>
       ),
-      title: "Smart Allocation & Skill Map",
+      title: "Skill Map",
       description:
-        "Sistem alokasi dana dinamis (Biaya Hidup, Bayar Hutang, Dana Darurat, dan Investasi) yang persentase idealnya akan terbuka dan menyesuaikan seiring dengan naiknya level pengguna.",
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+        "Sistem alokasi dana dinamis (Biaya Hidup, Bayar Hutang, Dana Darurat, dan Investasi) yang persentase idealnya akan terbuka dan menyesuaikan seiring dengan naiknya level. Pengguna juga dapat melakukan penyesuain skill sesuai kebuthuan.",
+      image: "/image/skill.jpg",
     },
     {
       id: "penalty",
@@ -113,11 +111,10 @@ export const siteConfig: SiteConfig = {
           <path d="M8 14h.01" />
         </svg>
       ),
-      title: "Manajemen Anggaran & Penalti",
+      title: "Manajemen Anggaran",
       description:
         "Pantau Daily Limit (Batas Pengeluaran Harian) secara real-time. Kelebihan pengeluaran hari ini (offset) akan otomatis dicatat sebagai penalti yang memotong anggaran di hari berikutnya.",
-      image:
-        "https://images.unsplash.com/photo-1580519542036-ed47f73ce152?q=80&w=800&auto=format&fit=crop",
+      image: "/image/offline.jpg",
     },
     {
       id: "quest",
@@ -139,11 +136,10 @@ export const siteConfig: SiteConfig = {
           <path d="M9 16l2 2 4-4" />
         </svg>
       ),
-      title: "Quest & Tagihan Rutin",
+      title: "Quest Rutin",
       description:
-        "Catat tagihan bulanan atau cicilan Anda layaknya sebuah Quest. Sistem akan memberikan notifikasi pengingat secara otomatis ketika mendekati tenggat waktu (jatuh tempo) agar Anda tidak pernah terkena denda keterlambatan.",
-      image:
-        "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop",
+        "Catat tagihan bulanan atau cicilan Anda layaknya sebuah Quest. Sistem akan memberikan notifikasi pengingat secara otomatis ketika mendekati tenggat waktu (jatuh tempo) agar Anda tidak terkena denda keterlambatan.",
+      image: "/image/offline.jpg",
     },
     {
       id: "analytics",
@@ -162,11 +158,10 @@ export const siteConfig: SiteConfig = {
           <path d="M22 12A10 10 0 0 0 12 2v10z" />
         </svg>
       ),
-      title: "Analitik Visual (Donut Chart)",
+      title: "Analitik Visual",
       description:
-        "Pantau arus kas Anda melalui grafik Donut Chart yang intuitif. Laporan pengeluaran umum (biaya hidup) dipisahkan secara cerdas dari alokasi investasi, memberikan Anda gambaran kekayaan dan kebiasaan belanja yang jauh lebih akurat.",
-      image:
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+        "Pantau arus kas Anda melalui grafik Donut Chart yang intuitif. Laporan pengeluaran umum (biaya hidup) dipisahkan dari alokasi investasi, memberikan Anda gambaran kekayaan dan kebiasaan belanja yang lebih akurat.",
+      image: "/image/offline.jpg",
     },
     {
       id: "offline",
@@ -185,11 +180,10 @@ export const siteConfig: SiteConfig = {
           <path d="M7 11V7a5 5 0 0 1 10 0v4" />
         </svg>
       ),
-      title: "100% Offline-First (Privasi Mutlak)",
+      title: "Offline-First",
       description:
-        "FinTale tidak menggunakan API pihak ketiga mana pun untuk melacak data bank atau pasar keuangan. Seluruh data keuangan disimpan secara lokal di dalam perangkat Anda menggunakan SQLite. Satu-satunya koneksi keluar adalah ke akun Google Drive pribadi Anda saat Anda menekan tombol Backup.",
-      image:
-        "https://images.unsplash.com/photo-1614064641913-a530a5011709?q=80&w=800&auto=format&fit=crop",
+        "FinTale tidak menggunakan API pihak ketiga mana pun untuk melacak data bank atau pasar keuangan. Seluruh data keuangan disimpan secara lokal di dalam perangkat Anda menggunakan SQLite. Satu-satunya koneksi keluar adalah ke akun Google Drive pribadi Anda saat Anda menekan tombol Backup atau Restore.",
+      image: "/image/offline.jpg",
     },
     {
       id: "investment",
@@ -208,15 +202,14 @@ export const siteConfig: SiteConfig = {
           <polyline points="16 7 22 7 22 13" />
         </svg>
       ),
-      title: "Manajemen Investasi Mandiri",
+      title: "Manajemen Investasi",
       description:
         "Catat dan pantau portofolio investasi Anda (Risiko Rendah, Menengah, Tinggi) lengkap dengan fitur penarikan modal dan klaim dividen.",
       note: "Catatan Penting: Karena ketiadaan API pihak ketiga, pergerakan harga pasar tidak berjalan otomatis. Pengguna diharapkan memperbarui nilai (value) aset investasinya secara manual secara rutin (misalnya seminggu atau sebulan sekali) agar persentase profit/loss tetap akurat.",
-      image:
-        "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=800&auto=format&fit=crop",
+      image: "/image/offline.jpg",
     },
     {
-      id: "cloud",
+      id: "backup",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -231,29 +224,11 @@ export const siteConfig: SiteConfig = {
           <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
         </svg>
       ),
-      title: "Manual Cloud Sync",
+      title: "Backup & Restore",
       description:
-        "Cadangkan dan pulihkan data JSON Anda dengan aman langsung ke Google Drive pribadi Anda.",
-      image:
-        "https://images.unsplash.com/photo-1600267185393-e158a98703de?q=80&w=800&auto=format&fit=crop",
+        "Lindungi data Anda dengan sistem pencadangan yang fleksibel dan aman. Kendalikan penuh data Anda melalui ekspor/impor file JSON secara lokal, atau nikmati kemudahan Cloud Sync untuk backup dan restore instan yang terintegrasi langsung dengan akun Google Drive pribadi Anda.",
+      image: "/image/backup.jpg",
     },
   ],
-  faq: [
-    {
-      q: "Apakah FinTale benar-benar gratis dan tanpa iklan?",
-      a: "Ya! FinTale adalah proyek Open Source. Kami berkomitmen untuk tidak memasang iklan atau melacak data pribadi Anda demi keuntungan.",
-    },
-    {
-      q: "Apakah data keuangan saya aman?",
-      a: "Sangat aman. FinTale menggunakan prinsip 100% Offline-First. Data Anda tidak pernah dikirim ke server kami, melainkan disimpan murni di memori (SQLite) HP Anda sendiri.",
-    },
-    {
-      q: "Bagaimana jika HP saya hilang atau rusak?",
-      a: "Anda bisa menggunakan fitur 'Manual Cloud Sync' di menu Pengaturan. Fitur ini akan mencadangkan (backup) data Anda langsung ke Google Drive pribadi Anda.",
-    },
-    {
-      q: "Mengapa harga aset investasi tidak berubah secara otomatis?",
-      a: "Demi menjaga privasi absolut, kami tidak menyambungkan aplikasi ini ke API perbankan pihak ketiga. Oleh karena itu, pergerakan harga pasar harus Anda perbarui secara manual (Update Value).",
-    },
-  ],
+  faq: [],
 };
