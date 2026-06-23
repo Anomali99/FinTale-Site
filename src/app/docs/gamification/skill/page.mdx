@@ -1,0 +1,51 @@
+# Skill Tree
+
+Kemampuan Anda dalam membagi proporsi harta direpresentasikan melalui **Pohon Alokasi (Skill Tree)**. Sistem akan memberikan rekomendasi alokasi dasar yang beradaptasi dengan Level Anda, namun Anda memegang kendali penuh untuk melakukan kustomisasi atribut demi gaya bermain finansial Anda.
+
+## Kustomisasi Poin Skill & Batas Limit
+
+Anda dapat memperbesar persentase sebuah _skill_ dengan cara mengorbankan (mengurangi) poin dari _skill_ lainnya. Terdapat batas maksimal (limit) penambahan atau pengurangan untuk setiap _skill_ yang besarannya ditentukan oleh Level karakter Anda.
+
+Sebagai contoh, pada rentang Level 1 - 10, batas kustomisasi _skill_ "Serang Boss" adalah 3%. Ini berarti Anda hanya bisa menambah atau mengurangi poin _skill_ maksimal 3 poin dari nilai dasarnya.
+
+Dalam melakukan kustomisasi, Anda akan menggunakan dua jenis poin:
+
+1. **Poin Reguler:** Poin standar yang didapat dari mengorbankan _skill_ lain. Penggunaan poin ini dibatasi secara ketat oleh angka limit kustomisasi level Anda.
+2. **Poin Ekstra (Mode Bebas):** Poin istimewa yang didapat ketika beban keuangan tertentu telah ditaklukkan. Poin Ekstra dapat digunakan untuk menambah _skill_ mana pun **tanpa terikat oleh batas limit kustomisasi**.
+
+> **Prioritas Penggunaan:** Jika Anda melakukan penambahan _skill_ dan memiliki kedua jenis poin ini, sistem akan memprioritaskan penggunaan **Poin Reguler** Anda terlebih dahulu. Barulah ketika jatah Poin Reguler habis (limit penambahan telah tercapai), sistem akan otomatis menggunakan **Poin Ekstra** untuk menembus batas atribut tersebut.
+
+## Aturan Alokasi Khusus
+
+Pohon Alokasi FinTale memiliki beberapa _skill_ unik yang terikat pada aturan khusus:
+
+### Status Alokasi Bebas (Unlock Poin Ekstra)
+
+Setelah _skill_ "Serang Boss" Anda selesai secara keseluruhan atau "Pelindung" sudah mencapai kapasitas maksimalnya, Anda akan membuka "Mode Bebas" (Poin Ekstra). Di titik ini, poin persentase yang sebelumnya terkunci untuk beban tersebut akan dibebaskan, dan poin tersebut dapat didistribusikan ulang ke _skill_ mana pun di dalam pohon alokasi sesuka hati Anda.
+
+### Prioritas Hibrida Tanker (Risiko Rendah)
+
+_Skill_ "Tanker" sangatlah unik karena ia mengambil persentasenya dari dua sumber induk sekaligus: "Pelindung" maupun "Gudang Senjata".
+
+- **Aturan Mutlak:** "Pelindung" adalah prioritas mutlak.
+- **Contoh:** Jika Anda mengatur alokasi 30% untuk Tanker, sistem akan menguras penuh 20% kapasitas Pelindung terlebih dahulu, barulah mengambil sisa 10%-nya dari kapasitas Gudang Senjata.
+
+### Sinergi Ransum (Kebutuhan Pokok) & Peti Harta (Dana Impian)
+
+Kedua sub-skill ini istimewa karena mereka memiliki batas kustomisasi `0.0`. Artinya, mereka tidak berdiri sendiri, melainkan _skill_ "ransum" berbagi wadah poin yang sama persis dengan "Peti Harta" dari total poin induknya (Stamina Pokok).
+Anda memiliki kebebasan penuh (tanpa batasan limit) untuk menabung sebagian pemasukan Anda ke dalam "Peti Harta" demi mewujudkan tujuan besar atau membeli _item_ legendaris di masa depan, selama total poin induk Stamina Pokoknya mencukupi.
+
+## Tabel Panduan Alokasi
+
+Berikut adalah ringkasan rekomendasi dasar dari _Guild_ beserta batas toleransi kustomisasinya (Poin Reguler) di setiap jenjang Level karakter Anda.
+
+|   Level   | Stamina Pokok (Biaya Hidup) | Serang Boss (Bayar Hutang) | Pelindung (Dana Darurat) | Gudang Senjata (Investasi) |
+| :-------: | :-------------------------: | :------------------------: | :----------------------: | :------------------------: |
+| **1-10**  |          55% ± 5%           |          25% ± 3%          |         20% ± 3%         |           LOCKED           |
+| **11-20** |          50% ± 5%           |          20% ± 3%          |         20% ± 4%         |          10% ± 2%          |
+| **21-30** |          45% ± 7%           |          15% ± 5%          |         20% ± 4%         |          20% ± 7%          |
+| **31-40** |          40% ± 7%           |          10% ± 5%          |         25% ± 5%         |         25% ± 10%          |
+| **41-49** |          35% ± 10%          |          5% ± 5%           |        30% ± 10%         |         30% ± 10%          |
+|  **50+**  |         **CUSTOM**          |         **CUSTOM**         |        **CUSTOM**        |         **CUSTOM**         |
+
+> **Catatan:** Untuk melihat detail persebaran _sub-skill_ (seperti kebutuhan pokok, profil risiko investasi, dll.) Anda dapat memantau Menu Informasi secara langsung di dalam aplikasi melalui ikon di bagian kanan atas layar Profil Anda.

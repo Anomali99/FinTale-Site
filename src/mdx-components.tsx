@@ -64,5 +64,28 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     pre: ({ children, ...props }) => (
       <CodeBlock {...props}>{children}</CodeBlock>
     ),
+
+    table: ({ children }) => (
+      <div className="border-ft-surface-variant my-6 w-full overflow-x-auto rounded-lg border">
+        <table className="w-full border-collapse text-left text-sm">
+          {children}
+        </table>
+      </div>
+    ),
+    thead: ({ children }) => (
+      <thead className="bg-ft-surface text-white">{children}</thead>
+    ),
+    tbody: ({ children }) => (
+      <tbody className="divide-ft-surface-variant divide-y">{children}</tbody>
+    ),
+    tr: ({ children }) => (
+      <tr className="transition-colors hover:bg-white/5">{children}</tr>
+    ),
+    th: ({ children }) => (
+      <th className="text-ft-primary px-4 py-3 font-bold">{children}</th>
+    ),
+    td: ({ children }) => (
+      <td className="text-ft-text-secondary px-4 py-3">{children}</td>
+    ),
   };
 }

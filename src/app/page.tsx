@@ -95,6 +95,7 @@ export default function Home() {
         <div className="animate-hidden bg-ft-background ring-ft-primary/20 relative mx-auto mb-8 flex h-32 w-32 items-center justify-center overflow-hidden rounded-full text-3xl shadow-[0_0_30px_rgba(255,215,0,0.2)] ring-4">
           <Image
             fill
+            sizes="100%, 100%"
             src="https://github.com/Anomali99.png"
             alt="Anomali99"
             className="object-cover"

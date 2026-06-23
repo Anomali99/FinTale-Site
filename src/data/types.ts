@@ -7,6 +7,7 @@ export interface AppArc {
 }
 
 export interface Downloads {
+  allReleasesUrl: string;
   android?: AppArc;
   ios?: AppArc;
 }
@@ -15,8 +16,6 @@ export interface AppInfo {
   name: string;
   version: string;
   releaseDate: string;
-  allReleasesUrl: string;
-  downloads: Downloads;
 }
 
 export interface HowItWorks {
@@ -41,6 +40,7 @@ export interface Faq {
 
 export interface SiteConfig {
   appInfo: AppInfo;
+  downloads: Downloads;
   howItWorks: Array<HowItWorks>;
   features: Array<Features>;
   faq: Array<Faq>;

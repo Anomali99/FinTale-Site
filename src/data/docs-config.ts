@@ -19,7 +19,7 @@ export const docsConfig: DocsConfig = {
     title: "Memulai",
     bab: [
       { title: "Pengenalan", url: "/docs" },
-      { title: "Instalasi & Setup", url: "/docs/instalasi" },
+      { title: "Instalasi & Setup", url: "/docs/installation" },
     ],
   },
   core: {
@@ -41,17 +41,17 @@ export const docsConfig: DocsConfig = {
   rpg: {
     title: "Sistem Gamifikasi",
     bab: [
-      { title: "Level & XP", url: "/docs/level-xp" },
-      { title: "Sistem Gelar (Title)", url: "/docs/title" },
-      { title: "Misi & Quest", url: "/docs/misi" },
-      { title: "Smart Allocation (Skill)", url: "/docs/alokasi" },
+      { title: "Level & Misi Harian", url: "/docs/gamification/level" },
+      { title: "Sistem Gelar", url: "/docs/gamification/title" },
+      { title: "Quest & Raid Boss", url: "/docs/gamification/quest" },
+      { title: "Skill Tree", url: "/docs/gamification/skill" },
     ],
   },
   data: {
     title: "Keamanan & Data",
     bab: [
-      { title: "PIN & Biometrik", url: "/docs/keamanan" },
-      { title: "Backup & Restore", url: "/docs/backup" },
+      { title: "PIN & Biometrik", url: "/docs/security" },
+      { title: "Backup & Restore", url: "/docs/security/backup" },
     ],
   },
 };

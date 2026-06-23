@@ -16,6 +16,7 @@ const PhoneMockup: FC<PhoneMockupProps> = ({ imgUrl }) => (
     <div className="bg-ft-surface relative h-full w-full">
       <Image
         fill
+        sizes="100%, 100%"
         src={imgUrl}
         alt="App Screen"
         className="object-cover object-center opacity-90"

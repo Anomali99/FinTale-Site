@@ -3,7 +3,7 @@
 import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { siteConfig } from "@/data/site-config";
+import { appInfo, downloads } from "@/data/site-config";
 
 interface HeaderProps {
   onMenuClick?: () => void;
@@ -39,11 +39,11 @@ const Header: FC<HeaderProps> = ({ onMenuClick }) => {
           <Image
             width={36}
             height={36}
-            src="/icon.png"
+            src="/icon.svg"
             alt="FinTale Logo"
             className="h-8 w-8 rounded-xl shadow-md md:h-9 md:w-9"
           />
-          {siteConfig.appInfo.name}
+          {appInfo.name}
         </Link>
       </div>
 
@@ -56,7 +56,7 @@ const Header: FC<HeaderProps> = ({ onMenuClick }) => {
           Panduan
         </Link>
         <a
-          href={siteConfig.appInfo.allReleasesUrl}
+          href={downloads.allReleasesUrl}
           className="border-ft-surface-variant hover:border-ft-primary text-ft-text-secondary hover:text-ft-primary flex flex-row gap-1 rounded-full border px-3 py-1.5 text-xs transition md:px-4 md:py-2 md:text-sm"
           target="_blank"
           rel="noopener noreferrer"

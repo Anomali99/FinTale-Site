@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, FC } from "react";
-import { siteConfig } from "@/data/site-config";
+import { appInfo, downloads } from "@/data/site-config";
 
 interface DownloadButtonProps {
   upward?: boolean;
@@ -9,7 +9,8 @@ interface DownloadButtonProps {
 
 const DownloadButton: FC<DownloadButtonProps> = ({ upward = false }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const { downloads, allReleasesUrl, version } = siteConfig.appInfo;
+  const { version } = appInfo;
+  const { android, ios, allReleasesUrl } = downloads;
 
   const menuPositionClass = upward
     ? "absolute bottom-full mb-4 left-1/2 -translate-x-1/2"
@@ -35,13 +36,13 @@ const DownloadButton: FC<DownloadButtonProps> = ({ upward = false }) => {
             Pilih versi untuk perangkat Anda:
           </div>
           <div className="flex flex-col gap-1 p-2">
-            {downloads.android && (
+            {android && (
               <div className="mb-2">
                 <div className="text-ft-primary flex justify-between px-3 py-2 text-xs font-bold tracking-wider uppercase">
                   <span>Android APK</span>
                 </div>
                 <a
-                  href={downloads.android.arm64}
+                  href={android.arm64}
                   className="hover:bg-ft-surface-variant block rounded-xl px-4 py-3 text-left transition"
                 >
                   <div className="font-semibold text-white">
@@ -55,7 +56,7 @@ const DownloadButton: FC<DownloadButtonProps> = ({ upward = false }) => {
                   </div>
                 </a>
                 <a
-                  href={downloads.android.armeabi}
+                  href={android.armeabi}
                   className="hover:bg-ft-surface-variant block rounded-xl px-4 py-3 text-left transition"
                 >
                   <div className="font-semibold text-white">armeabi-v7a</div>
@@ -64,7 +65,7 @@ const DownloadButton: FC<DownloadButtonProps> = ({ upward = false }) => {
                   </div>
                 </a>
                 <a
-                  href={downloads.android.universal}
+                  href={android.universal}
                   className="hover:bg-ft-surface-variant block rounded-xl px-4 py-3 text-left transition"
                 >
                   <div className="font-semibold text-white">Universal APK</div>
