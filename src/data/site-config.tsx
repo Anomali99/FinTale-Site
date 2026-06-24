@@ -2,7 +2,7 @@ import { SiteConfig, AppInfo, HowItWorks, Features, Downloads } from "./types";
 
 export const appInfo: AppInfo = {
   name: "FinTale",
-  version: "v1.1.0",
+  version: "v1.0.2",
   releaseDate: "Juni 2026",
 };
 
@@ -180,7 +180,7 @@ export const features: Features[] = [
     ),
     title: "Offline-First",
     description:
-      "FinTale tidak menggunakan API pihak ketiga mana pun untuk melacak data bank atau pasar keuangan. Seluruh data keuangan disimpan secara lokal di dalam perangkat Anda menggunakan SQLite. Satu-satunya koneksi keluar adalah ke akun Google Drive pribadi Anda saat Anda menekan tombol Backup atau Restore.",
+      "Data finansial Anda dilindungi selayaknya brankas pribadi. Selain menyimpan seluruh data 100% secara lokal di perangkat, FinTale mengamankan aplikasi Anda dengan perlindungan ganda berlapis PIN dan Biometrik. Rahasia harta Anda hanya bisa diakses oleh Anda sendiri.",
     image: "/image/offline.jpg",
   },
   {

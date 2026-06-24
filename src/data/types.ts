@@ -1,4 +1,5 @@
 import { JSX } from "react";
+
 export interface AppArc {
   arm64: string;
   armeabi: string;
@@ -45,3 +46,19 @@ export interface SiteConfig {
   features: Array<Features>;
   faq: Array<Faq>;
 }
+
+export interface SubBab {
+  title: string;
+  url: string;
+}
+
+export interface Bab extends SubBab {
+  subbab?: Array<SubBab>;
+}
+
+export interface Section {
+  title: string;
+  bab: Array<Bab>;
+}
+
+export type DocsConfig = Record<string, Section>;
